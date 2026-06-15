@@ -45,19 +45,15 @@ export default function LatestWork() {
         </div>
 
         {/* Cell 4 — full width on small, spans 2 cols 2 rows on md+ */}
-        <div className="
+        <div
+          className="
             col-span-2 row-start-2
             md:col-start-1 md:col-span-2 md:row-start-2 md:row-span-2
-            bg-[#222222] p-2 rounded-[12px] flex items-center gap-2 justify-center text-[#f8f8f8] font-medium md:h-full h-[16rem]">
-            
-            <div className="h-full w-[75%] bg-red-300 rounded-[7px]">
-              <img src="images/image.png" className="w-full h-full" alt="" />
-            </div>
-
-            <div className="flex-1 h-full flex flex-col gap-2">
-              <div className="h-1/2 w-full bg-[#1C1A17] rounded-[7px]"></div>
-              <div className="h-1/2 w-full bg-[#1C1A17] rounded-[7px]"></div>
-            </div>
+            bg-[#222222] rounded-[12px] overflow-hidden
+            md:h-full h-[16rem]
+          "
+        >
+          <video src="/videos/ss.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
         </div>
 
         {/* Cell 5 */}

@@ -19,12 +19,12 @@ export default function Home() {
       </div>
 
       {/* about me */}
-      <section className="md:px-[3.8rem] md:h-screen md:pt-24 pt-12 px-[0.8rem] bg-[#f8f8f8] ">
+      <section className="md:px-[3.8rem] md:pb-10 md:pt-24 pt-12 px-[0.8rem] bg-[#f8f8f8] ">
         <AboutMe />
       </section>
 
       {/* swipe */}
-      <section className="w-full md:px-[3.8rem] pt-24 p-[0.12rem] h-screen bg-[#f8f8f8]">
+      <section className="w-full  md:px-[3.8rem] p-[0.12rem] pb-22 bg-[#f8f8f8] ">
         <Swipe />
       </section>
 
