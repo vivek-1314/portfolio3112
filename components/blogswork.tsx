@@ -39,7 +39,7 @@ export default function BlogsWork() {
     ];
 
     return (
-        <div className="w-full md:min-h-screen h-full flex flex-col items-center justify-center px-20 py-16">
+        <div className="w-full md:min-h-screen h-full flex flex-col items-center justify-center px-4 py-16">
             <div className="mb-4 flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-[#222222]" />
                 <span className="text-sm font-medium text-[#222222] font-neo">Blogs</span>

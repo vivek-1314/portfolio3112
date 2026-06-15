@@ -72,7 +72,7 @@ export default function LatestWork() {
                 <span className="text-[#FFA116] text-xs font-semibold">LeetCode</span>
               </div>
               {/* pill tag — blog card style */}
-              <span className="text-[10px] font-medium uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#FFA116]/15 text-[#FFA116]">
+              <span className="text-[6px] font-medium md:block hidden tracking-wider px-2.5 py-0.5 rounded-full bg-[#FFA116]/15 text-[#FFA116]">
                 @vivek_-vivek
               </span>
             </div>
@@ -81,9 +81,9 @@ export default function LatestWork() {
               <p className="text-white/40 text-[9px] uppercase tracking-widest mb-0.5">Problems Solved</p>
               <p className="text-white text-[1.3rem] md:text-4xl font-bold leading-none">536</p>
               <div className="flex gap-3 mt-2">
-                <span className="text-[11px] px-2 py-0.5 rounded-full bg-green-400/10 text-green-400">Easy 159</span>
-                <span className="text-[11px] px-2 py-0.5 rounded-full bg-yellow-400/10 text-yellow-400">Med 319</span>
-                <span className="text-[11px] px-2 py-0.5 rounded-full bg-red-400/10 text-red-400">Hard 58</span>
+                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-green-400/10 text-green-400">Easy 159</span>
+                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-yellow-400/10 text-yellow-400">Med 319</span>
+                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-red-400/10 text-red-400">Hard 58</span>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function LatestWork() {
                 </svg>
                 <span className="text-[#4f8ef7] text-xs font-semibold">Codeforces</span>
               </div>
-              <span className="text-[10px] font-medium uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#4f8ef7]/15 text-[#4f8ef7]">
+              <span className="text-[10px] md:block hidden font-medium uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#4f8ef7]/15 text-[#4f8ef7]">
                 @vivek1314gurjar
               </span>
             </div>
@@ -115,8 +115,8 @@ export default function LatestWork() {
               <p className="text-white/40 text-[9px] uppercase tracking-widest mb-0.5">Rating</p>
               <p className="text-white text-3xl md:text-4xl font-bold leading-none">1009</p>
               <div className="flex gap-2 mt-2">
-                <span className="text-[11px] px-2 py-0.5 rounded-full bg-[#4f8ef7]/10 text-[#4f8ef7]">10 contests</span>
-                <span className="text-[11px] px-2 py-0.5 rounded-full bg-white/5 text-white/50">max 1024</span>
+                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-[#4f8ef7]/10 text-[#4f8ef7]">10 contests</span>
+                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-white/5 text-white/50">max 1024</span>
               </div>
             </div>
           </div>

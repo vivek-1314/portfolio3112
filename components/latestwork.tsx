@@ -62,7 +62,7 @@ export default function LatestWork() {
       <h2 className="text-3xl font-medium leading-tight text-[#222222] md:text-5xl">
         Explore My Dev Portfolio
       </h2>
-      <h2 className="text-3xl mb-[5rem] font-medium leading-tight text-[#222222] md:text-5xl">
+      <h2 className="text-3xl mb-[5rem] font-medium leading-tight text-[#7b7b7b] md:text-5xl">
         Creative Solutions
       </h2>
 

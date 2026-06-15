@@ -29,12 +29,12 @@ export default function Home() {
       </section>
 
       {/* experience */}
-      <section className="w-full md:px-[3.8rem] p-[0.12rem] md:h-[90vh] h-screen bg-[#f8f8f8] ">
+      <section className="w-full md:px-[3.8rem] p-[0.12rem]  h-screen md:h-[90vh] bg-[#f8f8f8] ">
         <Experience />
       </section>
 
       {/* cta banner */}
-      <section className="w-full  md:px-[3.8rem] p-[0.12rem] py-10 bg-[#f8f8f8] ">
+      <section className="w-full mt-18 md:mt-0 md:px-[3.8rem] p-[0.12rem] py-10 bg-[#f8f8f8] ">
         <CtaBanner />
       </section>
 
@@ -42,7 +42,7 @@ export default function Home() {
         <LatestWork />
       </div>
 
-      <div className="w-full md:px-[3.8rem] p-[0.12rem] md:pt-[8rem] pt-12">
+      <div className="w-full md:px-[3.8rem] p-[0.12rem] md:pt-[8rem] pt-24">
         <DSAwork />
       </div>
 
