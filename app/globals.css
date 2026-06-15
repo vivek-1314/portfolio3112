@@ -24,3 +24,40 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@font-face {
+  font-family: "neo";
+  src: url("/font/Demo_Fonts/Fontspring-DEMO-neogroteskess-light.otf") format("opentype");
+}
+
+.font-neo {
+  font-family: "neo", sans-serif;
+}
+
+@font-face {
+  font-family: "neo-bold";
+  src: url("/font/Demo_Fonts/Fontspring-DEMO-neogroteskessalt-regular.otf") format("opentype");
+}
+
+.font-neo-bold {
+  font-family: "neo-bold", sans-serif;
+}
+
+@font-face {
+  font-family: "slight";
+  src: url("/font/Demo_Fonts/Fontspring-DEMO-neogroteskess-ultralight.otf") format("opentype");
+}
+
+.font-slight {
+  font-family: "slight", sans-serif;
+}
+
+@font-face {
+  font-family: "light";
+  src: url("/font/Demo_Fonts/Fontspring-DEMO-neogroteskessalt-light.otf") format("opentype");
+}
+
+.font-light {
+  font-family: "light", sans-serif;
+}
