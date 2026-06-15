@@ -18,7 +18,7 @@ const cards = [
 
 const CLONE_COUNT = 3; // cards cloned on each side
 const GAP = 24;
-const AUTO_DELAY = 3000;
+const AUTO_DELAY = 1800;
 
 // Build: [last N clones] + [real cards] + [first N clones]
 const clonesBefore = cards.slice(-CLONE_COUNT);
@@ -256,22 +256,22 @@ export default function MyCarousel() {
       </div>
 
       {/* Nav arrows + dots */}
-      <div className="flex items-center justify-center gap-3 mt-8 px-[10vw]">
+      <div className="flex md:mt-18 mt-8   items-center justify-center gap-3 mt-8 px-[10vw]">
         <button
           onClick={handlePrev}
-          className="w-10 h-10 rounded-full border border-zinc-300 flex items-center justify-center
-            text-zinc-700 hover:bg-zinc-100 transition-colors duration-200 cursor-pointer"
+          className="w-10 h-10 rounded-full border border-zinc-300 items-center justify-center
+            text-zinc-700 hover:bg-zinc-100 transition-colors duration-200 cursor-pointer md:flex hidden"
           aria-label="Previous"
         >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <svg className="w-4 h-4 " fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
 
         <button
           onClick={handleNext}
-          className="w-10 h-10 rounded-full border border-zinc-300 flex items-center justify-center
-            text-zinc-700 hover:bg-zinc-100 transition-colors duration-200 cursor-pointer"
+          className="w-10 h-10 rounded-full border border-zinc-300 items-center justify-center
+            text-zinc-700 hover:bg-zinc-100 transition-colors duration-200 cursor-pointer md:flex hidden"
           aria-label="Next"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

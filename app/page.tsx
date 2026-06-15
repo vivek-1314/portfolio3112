@@ -38,7 +38,7 @@ export default function Home() {
         <CtaBanner />
       </section>
 
-      <div className="w-full md:px-[3.8rem] p-[0.12rem] md:pt-[8rem] pt-12">
+      <div className="w-full md:px-[10vw] p-[0.12rem] md:pt-[8rem] pt-12">
         <LatestWork />
       </div>
 
