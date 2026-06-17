@@ -1,8 +1,8 @@
 const navigationLinks = [
-    { name: "About Me", href: "/" },
-    { name: "Portfolio", href: "/about" },
-    { name: "Services", href: "/projects" },
-    { name: "Blog", href: "/contact" },
+    { name: "About Me", href: "#about" },
+    { name: "Portfolio", href: "#latest-work" },
+    { name: "Services", href: "#experience" },
+    { name: "Blog", href: "#blogs-work" },
 ];
 
 export default function Header() {
@@ -20,10 +20,17 @@ export default function Header() {
                     ))
                 }
             </div>
-            <a className="ml-auto mr-2" href="">
-                <span className="md:text-[0.9rem] text-[0.8rem] leading-none">Book A Call</span>
+            <a
+                className="ml-auto mr-2"
+                href="https://wa.me/918817358864?text=Hi%20Vivek,%20I%20would%20like%20to%20book%20a%20call."
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <span className="md:text-[0.9rem] text-[0.8rem] leading-none">
+                    Book A Call
+                </span>
                 <div className="h-[0.09rem] bg-black"></div>
-            </a>
+                </a>
         </header>
     ) ;
 }

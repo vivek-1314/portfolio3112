@@ -19,34 +19,34 @@ export default function Home() {
       </div>
 
       {/* about me */}
-      <section className="md:px-[3.8rem] md:pb-10 md:pt-24 pt-12 px-[0.8rem] bg-[#f8f8f8] ">
+      <section id="about" className="md:px-[3.8rem] md:pb-10 md:pt-24 pt-12 px-[0.8rem] bg-[#f8f8f8] ">
         <AboutMe />
       </section>
 
       {/* swipe */}
-      <section className="w-full  md:px-[3.8rem] p-[0.12rem] pb-22 bg-[#f8f8f8] ">
+      <section id="swipe" className="w-full  md:px-[3.8rem] p-[0.12rem] pb-22 bg-[#f8f8f8] ">
         <Swipe />
       </section>
 
       {/* experience */}
-      <section className="w-full md:px-[3.8rem] p-[0.12rem]  h-screen md:h-[90vh] bg-[#f8f8f8] ">
+      <section id="experience" className="w-full md:px-[3.8rem] p-[0.12rem]  h-screen md:h-[90vh] bg-[#f8f8f8] ">
         <Experience />
       </section>
 
       {/* cta banner */}
-      <section className="w-full mt-18 md:mt-0 md:px-[3.8rem] p-[0.12rem] py-10 bg-[#f8f8f8] ">
+      <section id="cta" className="w-full mt-18 md:mt-0 md:px-[3.8rem] p-[0.12rem] py-10 bg-[#f8f8f8] ">
         <CtaBanner />
       </section>
 
-      <div className="w-full md:px-[10vw] p-[0.12rem] md:pt-[8rem] pt-12">
+      <div id="latest-work" className="w-full md:px-[10vw] p-[0.12rem] md:pt-[8rem] pt-12">
         <LatestWork />
       </div>
 
-      <div className="w-full md:px-[3.8rem] p-[0.12rem] md:pt-[8rem] pt-24">
+      <div id="dsa-work" className="w-full md:px-[3.8rem] p-[0.12rem] md:pt-[8rem] pt-24">
         <DSAwork />
       </div>
 
-      <div className="w-full md:px-[3.8rem] p-[0.12rem] md:pt-[8rem] pt-12 pb-10">
+      <div id="blogs-work" className="w-full md:px-[3.8rem] p-[0.12rem] md:pt-[8rem] pt-12 pb-10">
         <BlogsWork /> 
       </div>
 

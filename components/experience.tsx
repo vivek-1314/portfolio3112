@@ -16,6 +16,7 @@ const experiences = [
     ],
     detail:
       "Worked on a Delhi-based, DPIIT-verified Startup India company. Built backend APIs, handled API integrations, and integrated payment gateways for secure transactions.",
+    link: "https://drive.google.com/file/d/1O_Pyl-QyTxw22JfJKsaT0tDooyjAPL-1/view",
   },
 ];
 
@@ -51,7 +52,9 @@ export default function ExperienceSection() {
               backend systems and APIs with agentic workflows.
             </p>
             <a
-              href="#"
+              href="https://wa.me/918817358864?text=Hi%20Vivek,%20I%20would%20like%20to%20get%20in%20touch."
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#222222] underline underline-offset-4"
             >
               Get In Touch
@@ -78,7 +81,13 @@ export default function ExperienceSection() {
             const isOpen = openIndex === idx;
 
             return (
-              <div key={idx} className="group border-t border-[#e2e2e2]">
+              <div 
+              onClick={() => {
+                toggle(idx);
+                window.open(exp.link, "_blank");
+              }}
+              aria-expanded={isOpen}
+               key={idx} className="group border-t border-[#e2e2e2]">
                 {/* Main row */}
                 <button
                   type="button"

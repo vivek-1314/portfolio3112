@@ -18,7 +18,7 @@ function GridCell({
       onClick={() => href && window.open(href, "_blank")}
     >
       {children}
-
+    
       {/* Hover overlay */}
       <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
 
@@ -70,16 +70,22 @@ export default function LatestWork() {
       <div className="grid md:hidden w-full gap-4 grid-cols-2">
 
         {/* Row 1: Cell 1 | Cell 2 */}
-        <GridCell className="overflow-hidden border border-[#222222] p-1 rounded-2xl flex items-center justify-center h-[10rem]">
+        <GridCell
+        href="https://whiteboard3112.vivek1314gurjar.workers.dev/"
+        className="overflow-hidden border border-[#222222] p-1 rounded-2xl flex items-center justify-center h-[10rem]">
           <img src="images/latest_work2.png" className="w-full h-full object-cover scale-110" alt="" />
         </GridCell>
 
-        <GridCell className="overflow-hidden border border-[#222222] rounded-2xl flex items-center justify-center h-[10rem]">
+        <GridCell
+        href="https://orion-website-one.vercel.app/"
+        className="overflow-hidden border border-[#222222] rounded-2xl flex items-center justify-center h-[10rem]">
           <img src="images/latest_work4.png" className="w-full h-full object-cover" alt="" />
         </GridCell>
 
         {/* Row 2: Video full width */}
-        <GridCell className="col-span-2 bg-[#222222] rounded-[12px] overflow-hidden h-[16rem]">
+        <GridCell
+        href="https://ochi-nine-beta.vercel.app/"
+        className="col-span-2 bg-[#222222] rounded-[12px] overflow-hidden h-[16rem]">
           <video src="/videos/ss.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
         </GridCell>
 
@@ -135,45 +141,70 @@ export default function LatestWork() {
         </div>
 
         {/* Row 4: Cell 6 | Cell 7 */}
-        <GridCell className="overflow-hidden rounded-2xl flex items-center justify-center h-[10rem]">
+        <GridCell 
+        href="https://frontend-gen-agent-wzig.vercel.app/"
+        className="overflow-hidden rounded-2xl flex items-center justify-center h-[10rem]">
           <img src="images/latest_work3.png" className="w-full h-full object-cover" alt="" />
         </GridCell>
 
-        <GridCell className="border border-[#222222] p-1 overflow-hidden rounded-2xl flex items-center justify-center h-[10rem]">
+        <GridCell 
+        href="https://vynk-app.vercel.app/"
+        className="border border-[#222222] p-1 overflow-hidden rounded-2xl flex items-center justify-center h-[10rem]">
           <img src="images/latest_work5.png" className="w-full h-full object-cover" alt="" />
         </GridCell>
 
       </div>
 
       {/* ── DESKTOP LAYOUT (md and above) ── */}
-      <div className="hidden md:grid w-full gap-4" style={{ gridTemplateColumns: "repeat(4, 1fr)" }}>
+<div
+  className="hidden md:grid w-full gap-4"
+  style={{ gridTemplateColumns: "repeat(4, 1fr)" }}
+>
 
-        {/* Cell 1 */}
-        <GridCell
-          className="bg-[#e2e2e2] overflow-hidden border border-[#222222] p-1 rounded-2xl flex items-center justify-center md:h-[18rem]"
-          style={{ gridColumn: "1 / 3", gridRow: "1" }}
-        >
-          <img src="images/latest_work2.png" className="w-full h-full object-cover scale-110" alt="" />
-        </GridCell>
+  {/* Cell 1 */}
+  <GridCell
+    href="https://whiteboard3112.vivek1314gurjar.workers.dev/"
+    className="bg-[#e2e2e2] overflow-hidden border border-[#222222] p-1 rounded-2xl flex items-center justify-center md:h-[18rem]"
+    style={{ gridColumn: "1 / 3", gridRow: "1" }}
+  >
+    <img
+      src="images/latest_work2.png"
+      className="w-full h-full object-cover scale-110"
+      alt=""
+    />
+  </GridCell>
 
-        {/* Cell 2 */}
-        <GridCell
-          className="overflow-hidden border border-[#222222] rounded-2xl flex items-center justify-center md:h-[18rem]"
-          style={{ gridColumn: "3 / 5", gridRow: "1" }}
-        >
-          <img src="images/latest_work4.png" className="w-full h-full object-cover rounded-2xl" alt="" />
-        </GridCell>
+  {/* Cell 2 */}
+  <GridCell
+    href="https://orion-website-one.vercel.app/"
+    className="overflow-hidden border border-[#222222] rounded-2xl flex items-center justify-center md:h-[18rem]"
+    style={{ gridColumn: "3 / 5", gridRow: "1" }}
+  >
+    <img
+      src="images/latest_work4.png"
+      className="w-full h-full object-cover rounded-2xl"
+      alt=""
+    />
+  </GridCell>
 
-        {/* Cell 3 — video */}
-        <GridCell
-          className="bg-[#222222] rounded-[12px] overflow-hidden md:h-full"
-          style={{ gridColumn: "1 / 4", gridRow: "2 / 4" }}
-        >
-          <video src="/videos/ss.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
-        </GridCell>
+  {/* Cell 3 */}
+  <GridCell
+    href="https://ochi-nine-beta.vercel.app/"
+    className="bg-[#222222] rounded-[12px] overflow-hidden md:h-full"
+    style={{ gridColumn: "1 / 4", gridRow: "2 / 4" }}
+  >
+    <video
+      src="/videos/ss.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-full object-cover"
+    />
+  </GridCell>
 
         {/* Cell 4 — orion-py (no GridCell) */}
-        <div
+          <div
           className="relative bg-[#1a1a2e] overflow-hidden rounded-2xl flex flex-col justify-between md:h-[16rem] p-4 md:p-5 cursor-pointer group"
           style={{ gridColumn: "4", gridRow: "2" }}
           onClick={() => window.open("https://github.com/yourusername/orion-py", "_blank")}
@@ -228,23 +259,33 @@ export default function LatestWork() {
           </div>
         </div>
 
-        {/* Cell 6 */}
-        <GridCell
-          className="bg-[#e2e2e2] overflow-hidden rounded-2xl flex items-center justify-center md:h-[16rem]"
-          style={{ gridColumn: "1 / 3", gridRow: "4" }}
-        >
-          <img src="images/latest_work3.png" className="w-full h-full object-cover" alt="" />
-        </GridCell>
+  {/* Cell 6 */}
+  <GridCell
+    href="https://frontend-gen-agent-wzig.vercel.app/"
+    className="bg-[#e2e2e2] overflow-hidden rounded-2xl flex items-center justify-center md:h-[16rem]"
+    style={{ gridColumn: "1 / 3", gridRow: "4" }}
+  >
+    <img
+      src="images/latest_work3.png"
+      className="w-full h-full object-cover"
+      alt=""
+    />
+  </GridCell>
 
-        {/* Cell 7 */}
-        <GridCell
-          className="border border-[#222222] p-1 overflow-hidden rounded-2xl flex items-center justify-center md:h-[16rem]"
-          style={{ gridColumn: "3 / 5", gridRow: "4" }}
-        >
-          <img src="images/latest_work5.png" className="w-full h-full object-cover" alt="" />
-        </GridCell>
+  {/* Cell 7 */}
+  <GridCell
+    href="https://vynk-app.vercel.app/"
+    className="border border-[#222222] p-1 overflow-hidden rounded-2xl flex items-center justify-center md:h-[16rem]"
+    style={{ gridColumn: "3 / 5", gridRow: "4" }}
+  >
+    <img
+      src="images/latest_work5.png"
+      className="w-full h-full object-cover"
+      alt=""
+    />
+  </GridCell>
 
-      </div>
+</div>
     </div>
   );
 }

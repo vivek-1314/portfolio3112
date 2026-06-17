@@ -28,12 +28,17 @@ export default function CtaBanner() {
                 and interesting challenges.
             </p>
 
-            <button className="group px-6 py-3 rounded-full bg-white text-black text-lg font-medium transition-all duration-300 hover:px-8">
+            <a
+                href="https://wa.me/918817358864?text=Hi%20Vivek,%20I%20have%20a%20project%20idea%20and%20would%20like%20to%20discuss%20it."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-6 py-3 rounded-full bg-white text-black text-lg font-medium transition-all duration-300 hover:px-8"
+                >
                 Let's Talk
                 <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">
-                ↗
+                    ↗
                 </span>
-            </button>
+                </a>
             </div>
 
         </div>

@@ -1,9 +1,8 @@
 const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About Me", href: "/about" },
-    { name: "Portfolio", href: "/projects" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
+    { name: "About Me", href: "#about" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "Services", href: "#experience" },
+    { name: "Blog", href: "#blog-work" },
   ];
 
 export default function Footer() {
@@ -24,7 +23,9 @@ export default function Footer() {
         
                 {/* CTA Link */}
                 <a
-                href="#"
+                href="https://wa.me/918817358864?text=Hi%20Vivek,%20I%20would%20like%20to%20book%20a%20call."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-2 inline-flex items-center gap-1 text-[#222222] text-base font-medium underline underline-offset-4 decoration-[#222222] hover:opacity-60 transition-opacity duration-200"
                 >
                 Book A Call

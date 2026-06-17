@@ -3,17 +3,61 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 
 const cards = [
-  { title: "OCHI", image: "images/demo_img7.png" },
-  { title: "ORION", image: "images/demo_img9.png" },
-  { title: "NODEX", image: "images/demo_img5.png" },
-  { title: "OCHI", image: "images/demo_img6.png" },
-  { title: "LEETX", image: "images/demo_img1.png" },
-  { title: "NODEX", image: "images/demo_img3.png" },
-  { title: "FRONTEND-GEN-AGENT", image: "images/demo_img11.png" },
-  { title: "ORION", image: "images/demo_img10.png" },
-  { title: "ORION", image: "images/demo_img8.png" },
-  { title: "LEETX", image: "images/demo_img2.png" },
-  { title: "NODEX", image: "images/demo_img4.png" },
+  {
+    title: "OCHI",
+    image: "images/demo_img7.png",
+    link: "https://ochi-nine-beta.vercel.app/",
+  },
+  {
+    title: "ORION",
+    image: "images/demo_img9.png",
+    link: "https://orion-website-one.vercel.app/",
+  },
+  {
+    title: "NODEX",
+    image: "images/demo_img5.png",
+    link: "https://nodex-1314.vercel.app/",
+  },
+  {
+    title: "OCHI",
+    image: "images/demo_img6.png",
+    link: "https://ochi-nine-beta.vercel.app/",
+  },
+  {
+    title: "LEETX",
+    image: "images/demo_img1.png",
+    link: "https://vivek-1314.github.io/leetx/",
+  },
+  {
+    title: "NODEX",
+    image: "images/demo_img3.png",
+    link: "https://nodex-1314.vercel.app/",
+  },
+  {
+    title: "FRONTEND-GEN-AGENT",
+    image: "images/demo_img11.png",
+    link: "https://frontend-gen-agent-wzig.vercel.app/",
+  },
+  {
+    title: "ORION",
+    image: "images/demo_img10.png",
+    link: "https://orion-website-one.vercel.app/",
+  },
+  {
+    title: "ORION",
+    image: "images/demo_img8.png",
+    link: "https://orion-website-one.vercel.app/",
+  },
+  {
+    title: "LEETX",
+    image: "images/demo_img2.png",
+    link: "https://vivek-1314.github.io/leetx/",
+  },
+  {
+    title: "NODEX",
+    image: "images/demo_img4.png",
+    link: "https://nodex-1314.vercel.app/",
+  },
 ];
 
 const CLONE_COUNT = 3; // cards cloned on each side
@@ -198,6 +242,7 @@ export default function MyCarousel() {
                 key={idx}
                 ref={idx === 0 ? cardRef : undefined}
                 className="flex-shrink-0 w-[60vw] max-w-[400px] min-w-[200px]"
+                onClick={() => window.open(item.link, "_blank")}
               >
                 <div
                   className="relative h-70 w-full rounded-2xl bg-zinc-200 overflow-hidden group cursor-pointer"
