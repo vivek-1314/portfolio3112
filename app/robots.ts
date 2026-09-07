@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://portfoliovivek-eight.vercel.app'
+export const dynamic = 'force-static'
+
+const BASE_URL = 'https://portfolio3112.pages.dev'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -10,8 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/', '/_next/'],
       },
-      // Explicitly welcome the major AI/search crawlers — helps visibility
-      // in AI-assisted search results (ChatGPT, Perplexity, Google SGE, etc.)
       { userAgent: 'GPTBot', allow: '/' },
       { userAgent: 'Google-Extended', allow: '/' },
       { userAgent: 'PerplexityBot', allow: '/' },
