@@ -79,11 +79,11 @@ export default function LatestWork() {
 
             <div>
               <p className="text-white/40 text-[9px] uppercase tracking-widest mb-0.5">Problems Solved</p>
-              <p className="text-white text-[1.3rem] md:text-4xl font-bold leading-none">536</p>
+              <p className="text-white text-[1.3rem] md:text-4xl font-bold leading-none">625</p>
               <div className="flex gap-3 mt-2">
-                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-green-400/10 text-green-400">Easy 159</span>
-                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-yellow-400/10 text-yellow-400">Med 319</span>
-                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-red-400/10 text-red-400">Hard 58</span>
+                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-green-400/10 text-green-400">Easy 180</span>
+                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-yellow-400/10 text-yellow-400">Med 377</span>
+                <span className="text-[11px] px-2 py-0.5 rounded-full md:bg-red-400/10 text-red-400">Hard 68</span>
               </div>
             </div>
           </div>
@@ -169,7 +169,7 @@ export default function LatestWork() {
                 DSA · All Topics
               </span>
               <p className="text-white text-xl md:text-3xl font-bold leading-snug mt-3">
-                737 problems solved<br className="hidden md:block" /> across all topics
+                850 problems solved<br className="hidden md:block" /> across all topics
               </p>
             </div>
 
