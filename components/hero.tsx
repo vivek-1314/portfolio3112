@@ -21,7 +21,7 @@ export default function Hero() {
               <div>
               <div className="flex items-start gap-1">
                 <span className="text-lg font-bold leading-none">+</span>
-                <span className="text-[3rem] font-bold leading-none font-slight">700</span>
+                <span className="text-[3rem] font-bold leading-none font-slight">850</span>
               </div>
               <p className="mt-2 ml-5 text-[0.7rem]   tracking-widest">
                 DSA Problems Solved
